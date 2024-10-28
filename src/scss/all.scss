@@ -1,4 +1,4 @@
-@import './normalize&reset.scss';
+@use './normalize&reset' as *; 
 * {
   box-sizing: border-box;
   margin: 0;
