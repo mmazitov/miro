@@ -1,0 +1,11 @@
+- var copyrights = []
+- copyrights.push({ title: '© <span class="cur-year">2022</span> Miro' })
+- copyrights.push({ title: 'Terms of Service' })
+- copyrights.push({ title: 'Privacy Policy' })
+- copyrights.push({ title: 'Manage Cookies' })
+
+
+ul.copyright-list.d-flex.flex-row
+  each copyright in copyrights
+    li.copyright-item
+      a(href="#", title=copyright.title).copyright-link!= copyright.title

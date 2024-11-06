@@ -1,0 +1,13 @@
+- var socials = []
+- socials.push({ title: 'Twitter', iconClass: 'twitter' })
+- socials.push({ title: 'Facebook', iconClass: 'facebook' })
+- socials.push({ title: 'Linkedin', iconClass: 'linkedin' })
+- socials.push({ title: 'Instagram', iconClass: 'instagram' })
+- socials.push({ title: 'Youtube', iconClass: 'youtube' })
+
+
+ul.socials-list.d-flex.flex-row.align-items-center
+  each social in socials
+    li.socials-item
+      a(href="#", title=social.title).socials-link
+        i(class="bi bi-" + social.iconClass)

@@ -1,0 +1,19 @@
+section.hero
+	.container
+		.row.d-flex.align-items-center.flex-row.hero-holder
+			.col-lg-6.col-md-6.col-sm-12.hero-text
+				h1.hero-title
+					|Take ideas from 
+					br
+					|better to best
+				p.hero-desc
+					|Miro is your team's visual platform to connect,
+					br
+					|collaborate, and create — together.
+				form.d-flex.flex-column.form.hero-form(action="#")
+					.input-holder
+						input(type="email", placeholder="Enter your work email", required).input
+					include ../components/button
+					span.helper-text Collaborate with your team within minutes
+			.col-lg-6.col-md-6.col-sm-12.hero-img
+				img(src="pic/hero__image.png", alt="Hero Image").img.hero-img

@@ -1,0 +1,12 @@
+{
+	"singleQuote": false,
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": true,
+	"trailingComma": "es5",
+	"scss": {
+		"singleQuote": false,
+		"tabWidth": 2,
+		"useTabs": true
+	}
+}

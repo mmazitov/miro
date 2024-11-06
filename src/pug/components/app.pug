@@ -1,0 +1,9 @@
+- const apps = [];
+- apps.push({ title: 'App Store', img: 'images/app-store.png' })
+- apps.push({ title: 'Google Play', img: 'images/google-play.png' })
+
+ul.app-list.d-flex.flex-row.align-items-center
+	each app in apps
+		li.app-item
+			a(href="#", title=app.title).d-flex.align-items-center.flex-row.app-link
+				img.app-img(src=app.img, alt="")

@@ -1,0 +1,94 @@
+@import './variables';
+body {
+	font: $weight-medium $fs-xmd/$lh-md $main-font;
+	color: $main-color;
+	background: $secondary-color;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 10px;
+	font-weight: $weight-medium;
+}
+h1 {
+	font-size: $fs-lg;
+	line-height: $lh-lg;
+	font-weight: $weight-bold;
+	margin-bottom: 16px;
+}
+h2 {
+	font-size: $fs-lg;
+	line-height: $lh-lg;
+	font-weight: $weight-bold;
+	margin-bottom: 12px;
+}
+h3,
+.card-title {
+	font-size: $fs-md;
+	font-weight: $weight-bold;
+	margin-bottom: 29px;
+}
+h4 {
+	font-size: $fs-xmd;
+}
+h5 {
+	font-size: $fs-sm;
+}
+h6 {
+	font-size: $fs-sm;
+}
+p {
+	font: $weight-medium $fs-xmd/$lh-md $secondary-font;
+	margin: 0 0 10px;
+	color: rgba($main-color, .6);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+strong,
+b {
+	font-weight: normal;
+}
+a {
+	color: $links-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+ul,
+ol {
+	margin: 0 0 rem(16) rem(32);
+	padding: 0;
+	list-style-position: outside;
+	li {
+		margin: 0 0 rem(8);
+	}
+}
+
+blockquote {
+	font-style: italic;
+	color: lighten($main-color, 20);
+	padding-left: rem(16);
+	border-left: rem(4) solid $main-color;
+	margin: 0 0 rem(16);
+}
+code,
+pre {
+	font-family: "Courier New", Courier, monospace;
+	font-size: rem(14);
+	background-color: clighten($main-color, 40);
+	padding: rem(2) rem(4);
+	border-radius: rem(4);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

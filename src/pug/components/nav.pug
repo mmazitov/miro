@@ -1,0 +1,10 @@
+- var navigations = []
+- navigations.push({ title: 'Product' })
+- navigations.push({ title: 'Solutions' })
+- navigations.push({ title: 'Resources' })
+- navigations.push({ title: 'Enterprise' })
+- navigations.push({ title: 'Enterprise' })
+ul.navbar-nav.d-flex.flex-row
+	each navigation in navigations
+		li.navbar-item
+			a.navbar-link.active(href="#")= navigation.title

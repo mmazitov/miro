@@ -1,0 +1,11 @@
+- var ideas = []
+- ideas.push({ title: 'Free forever', desc:'Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our <a href="#">pricing plans</a> for more features.' })
+- ideas.push({ title: 'Easy integrations', desc:'Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our <a href="">Marketplace</a>.' })
+- ideas.push({ title: 'Security first', desc:'We treat your data like you would — with the utmost care. We follow industry-leading security standards and give you tools to protect intellectual property. Learn more at our <a href="">Trust Center</a>.' })
+
+.ideas-holder.d-flex.flex-row
+	each idea in ideas
+		.card.ideas-item
+			.card-body
+				h3.card-title.ideas-title= idea.title
+				p.card-text.ideas-desc!= idea.desc

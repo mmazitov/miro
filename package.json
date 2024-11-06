@@ -1,36 +1,45 @@
 {
-  "name": "markup-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "@babel/core": "^7.25.8",
-    "@babel/preset-env": "^7.25.8",
-    "browser-sync": "^3.0.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^9.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-combine-media-queries": "^0.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^6.0.0",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-pug": "^5.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser": "^2.1.0",
-    "sass": "^1.79.5"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "imagemin-gifsicle": "^7.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^11.0.1"
-  }
+	"name": "",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "gulp",
+		"lint": "stylelint '**/*.scss'",
+		"format": "prettier --write '**/*.scss'",
+		"build": "gulp build"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.8",
+		"@babel/preset-env": "^7.25.8",
+		"browser-sync": "^3.0.3",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-combine-media-queries": "^0.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-eslint": "^6.0.0",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-pug": "^5.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-terser": "^2.1.0",
+		"sass": "^1.43.5",
+		"prettier": "^3.3.3",
+		"stylelint": "^15.11.0",
+		"stylelint-config-standard": "^31.0.0"
+	},
+	"dependencies": {
+		"bootstrap": "5.3.3",
+		"bootstrap-icons": "^1.10.5",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-mozjpeg": "^10.0.0",
+		"imagemin-optipng": "^8.0.0",
+		"imagemin-svgo": "^10",
+		"stylelint-scss": "^5.3.2"
+	}
 }
