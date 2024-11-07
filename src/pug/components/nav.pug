@@ -1,10 +1,27 @@
-- var navigations = []
-- navigations.push({ title: 'Product' })
-- navigations.push({ title: 'Solutions' })
-- navigations.push({ title: 'Resources' })
-- navigations.push({ title: 'Enterprise' })
-- navigations.push({ title: 'Enterprise' })
-ul.navbar-nav.d-flex.flex-row
-	each navigation in navigations
-		li.navbar-item
-			a.navbar-link.active(href="#")= navigation.title
+button.navbar-toggler.position-relative(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+	span.navbar-toggler-icon
+#navbarSupportedContent.collapse.navbar-collapse.w-100
+	ul.navbar-nav.me-auto.mb-2.mb-lg-0
+		li.nav-item
+			a.nav-link.active(aria-current="page", href="#") Product
+		li.nav-item
+			a.nav-link(href="#") Solutions
+		li.nav-item.dropdown
+			a.nav-link.dropdown-toggle.d-flex.flex-row.align-items-center(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+				|Resources
+				i.bi.bi-chevron-down
+			ul.dropdown-menu
+				li
+					a.dropdown-item(href="#") Action
+				li
+					hr.dropdown-divider
+				li
+					a.dropdown-item(href="#") Another action
+				li
+					hr.dropdown-divider
+				li
+					a.dropdown-item(href="#") Something else here
+		li.nav-item
+			a.nav-link Enterprise
+		li.nav-item
+			a.nav-link Pricing

@@ -4,12 +4,16 @@ footer.footer(role="contentinfo")
 		.row
 			.col-lg-12.col-md-12.col-sm-12
 				hr.footer-separator
-		.row.d-flex.align-items-center
-			.col-lg-2.col-md-12.col-sm-12.d-flex.flex-row
-				include ../components/social-media
-				include ../components/lang-switch
-			.col-lg-7.col-md-12.col-sm-12
-				include ../components/copyright
-			.col-lg-3.col-md-12.col-sm-12.d-flex.justify-content-end
-				include ../components/app
+		.row.d-flex.align-items-center.justify-content-between
+			.col-lg-8.col-md-12.col-12
+				.row.d-flex.flex-row
+					.col-lg-auto.col-12.d-flex.flex-row.justify-content-lg-start.justify-content-center.mb-lg-0.mb-3
+						include ../components/social-media
+						include ../components/lang-switch
+					.col-lg-8.col-12.d-flex.justify-content-lg-start.justify-content-center.mb-lg-0.mb-3
+						include ../components/copyright
+			.col-lg-4.col-md-12.col-12
+				.row.d-flex.justify-content-lg-end.justify-content-center
+					.col-lg-3.col-12.w-auto
+						include ../components/app
 //footer end

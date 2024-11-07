@@ -1,7 +1,7 @@
 section.hero
 	.container
-		.row.d-flex.align-items-center.flex-row.hero-holder
-			.col-lg-6.col-md-6.col-sm-12.hero-text
+		.row.d-flex.align-items-top.flex-row.hero-holder
+			.col-lg-6.col-md-12.col-sm-12.hero-text.mb-md-3.mb-sm-3
 				h1.hero-title
 					|Take ideas from 
 					br
@@ -15,5 +15,5 @@ section.hero
 						input(type="email", placeholder="Enter your work email", required).input
 					include ../components/button
 					span.helper-text Collaborate with your team within minutes
-			.col-lg-6.col-md-6.col-sm-12.hero-img
-				img(src="pic/hero__image.png", alt="Hero Image").img.hero-img
+			.col-lg-6.col-md-12.col-sm-12.hero-img
+				img(src="pic/hero__image.png", alt="Hero Image").img-fluid.img.hero-img

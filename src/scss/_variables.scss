@@ -1,5 +1,5 @@
-$main-font: 'Inter', sans-serif;
-$secondary-font: 'Helvetica', Arial, sans-serif;
+$main-font: "Inter", sans-serif;
+$secondary-font: "Helvetica", Arial, sans-serif;
 
 $weight-bold: 700;
 $weight-medium: 400;
@@ -10,20 +10,16 @@ $fs-xmd: rem(18);
 $fs-sm: rem(16);
 $fs-xsm: rem(14);
 
-$lh-lg: rem(48);
+$lh-lg: rem(54);
 $lh-md: rem(24);
 
 $main-color: #050038;
 $secondary-color: #fff;
-$color-1: #4262FF;
-$color-2: #5F5C80;
-$color-4: #9B99AF;
-$color-5: #FFD02F;
-$color-6: #A6A6A6;
-$color-7: #f0f0f0;
-$color-8: #090909;
-
-
+$color-1: #4262ff;
+$color-2: #5f5c80;
+$color-3: #9b99af;
+$color-4: #ffd02f;
+$color-5: #090909;
 
 $btn-bg: $color-1;
 $btn-color: $secondary-color;
@@ -31,21 +27,32 @@ $btn-border: $color-1;
 
 $input-bg: $secondary-color;
 $input-color: $color-2;
-$input-border: $color-4;
+$input-border: $color-3;
 
-$label-bg: $color-5;
+$label-bg: $color-4;
+$label-color: $color-5;
 
 $footer-bg: $main-color;
-$footer-separator: $color-4;
-
-$app-border: $color-6;
-
+$footer-separator: $color-3;
+$footer-lang: $secondary-color;
+$footer-color: $secondary-color;
 
 $links-color: $main-color;
 $ideas-link-color: $color-1;
 
-$header-border: $color-7;
+$footer-social-color: $secondary-color;
 
-$social-color: $secondary-color;
-$footer-lang: $secondary-color;
-$footer-color: $secondary-color;
+$drop-link-bg-hover: $color-1;
+$drop-link-color-hover: $secondary-color;
+$drop-link-bg-active: $color-1;
+$drop-link-color-active: $secondary-color;
+
+$body-bg: $secondary-color;
+$menu-shadow-color: rgba($color-2, 0.8);
+$menu-shadow: 0 0 15px;
+
+$navbar-toggler-icon-bg: $color-2;
+
+$grid-breakpoints: (
+	xs: 320px,
+);

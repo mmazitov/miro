@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 body {
 	font: $weight-medium $fs-xmd/$lh-md $main-font;
 	color: $main-color;
@@ -19,13 +19,13 @@ h1 {
 	font-size: $fs-lg;
 	line-height: $lh-lg;
 	font-weight: $weight-bold;
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 h2 {
 	font-size: $fs-lg;
 	line-height: $lh-lg;
 	font-weight: $weight-bold;
-	margin-bottom: 12px;
+	margin-bottom: 2px;
 }
 h3,
 .card-title {
@@ -44,8 +44,8 @@ h6 {
 }
 p {
 	font: $weight-medium $fs-xmd/$lh-md $secondary-font;
-	margin: 0 0 10px;
-	color: rgba($main-color, .6);
+	margin: 0 0 33px;
+	color: rgba($main-color, 0.6);
 	&:last-child {
 		margin-bottom: 0;
 	}

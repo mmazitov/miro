@@ -20,6 +20,7 @@ const paths = {
 		src: "./src/scss/**/*.scss",
 		dist: "./dist/css",
 		bootstrap: "./node_modules/bootstrap/scss/bootstrap.scss", // Bootstrap entry point
+		// bootstrapIcons: "./node_modules/bootstrap-icons/font/bootstrap-icons.scss", // Bootstrap Icons font path
 	},
 	scripts: {
 		src: "./src/js/**/*.js",
@@ -52,37 +53,37 @@ function pugTask() {
 // Task to compile SCSS into CSS with Bootstrap (separate Bootstrap and custom styles)
 function sassTask() {
 	return gulp
-		.src(paths.styles.src) // Only include custom SCSS (Bootstrap подключим отдельно)
-		.pipe(sourcemaps.init()) // Инициализируем sourcemaps
-		.pipe(sass().on("error", sass.logError)) // Компиляция SCSS
-		.pipe(cleanCSS()) // Минификация CSS
-		.pipe(sourcemaps.write()) // Запись sourcemaps
-		.pipe(gulp.dest(paths.styles.dist)) // Сохраняем в папку dist
+		.src(paths.styles.src) // Only include custom SCSS (Bootstrap is included separately)
+		.pipe(sourcemaps.init()) // Initialize sourcemaps
+		.pipe(sass().on("error", sass.logError)) // Compile SCSS
+		.pipe(cleanCSS()) // Minify CSS
+		.pipe(sourcemaps.write()) // Write sourcemaps
+		.pipe(gulp.dest(paths.styles.dist)) // Save in the dist folder
 		.pipe(browserSync.stream());
 }
 
 // Task to handle Bootstrap CSS separately
 function bootstrapCSS() {
 	return gulp
-		.src(paths.styles.bootstrap)
-		.pipe(sourcemaps.init()) // Инициализируем sourcemaps для Bootstrap
-		.pipe(sass().on("error", sass.logError)) // Компиляция SCSS для Bootstrap
-		.pipe(cleanCSS()) // Минификация CSS
-		.pipe(sourcemaps.write()) // Запись sourcemaps
-		.pipe(gulp.dest(paths.styles.dist)) // Сохраняем в папку dist
+		.src([paths.styles.bootstrap, paths.styles.bootstrapIcons]) // Include both Bootstrap SCSS and Icons
+		.pipe(sourcemaps.init()) // Initialize sourcemaps for Bootstrap
+		.pipe(sass().on("error", sass.logError)) // Compile SCSS for Bootstrap
+		.pipe(cleanCSS()) // Minify CSS
+		.pipe(sourcemaps.write()) // Write sourcemaps
+		.pipe(gulp.dest(paths.styles.dist)) // Save in the dist folder
 		.pipe(browserSync.stream());
 }
 
 // Task for linting and compiling JavaScript with Bootstrap (separate Bootstrap and custom JS)
 function jsTask() {
 	return gulp
-		.src([paths.scripts.bootstrap, paths.scripts.src]) // Включаем Bootstrap и кастомный JS
-		.pipe(sourcemaps.init()) // Инициализируем sourcemaps
-		.pipe(eslint()) // Линтинг JavaScript
-		.pipe(eslint.format()) // Форматирование выводов ESLint
-		.pipe(terser()) // Минификация JavaScript
-		.pipe(sourcemaps.write()) // Запись sourcemaps
-		.pipe(gulp.dest(paths.scripts.dist)) // Сохраняем в папку dist
+		.src([paths.scripts.bootstrap, paths.scripts.src]) // Include Bootstrap and custom JS
+		.pipe(sourcemaps.init()) // Initialize sourcemaps
+		.pipe(eslint()) // Lint JavaScript
+		.pipe(eslint.format()) // Format ESLint output
+		.pipe(terser()) // Minify JavaScript
+		.pipe(sourcemaps.write()) // Write sourcemaps
+		.pipe(gulp.dest(paths.scripts.dist)) // Save in the dist folder
 		.pipe(browserSync.stream());
 }
 

@@ -5,7 +5,7 @@
 - copyrights.push({ title: 'Manage Cookies' })
 
 
-ul.copyright-list.d-flex.flex-row
+ul.copyright-list.d-flex.flex-md-row.justify-content-md-center.flex-column
   each copyright in copyrights
     li.copyright-item
       a(href="#", title=copyright.title).copyright-link!= copyright.title

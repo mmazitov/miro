@@ -1,11 +1,12 @@
 //header start
-header.header(role="banner")
-	.container-fluid
-		.row.align-items-center
-			.col-lg-1.g-col-md-4
-				include ../components/logo
-			.col-lg-6.g-col-md-4
-				include ../components/nav
-			.col-lg-5.g-col-md-4.d-flex.justify-content-end
-				include ../components/signup
+header.header.border-bottom(role="banner")
+	.navbar.navbar-expand-lg
+		.container-fluid
+			.row.align-items-end.w-100
+				.col-lg-1.col-12.d-lg-block.d-flex.justify-content-center
+					include ../components/logo
+				.col-lg-6.col-6.position-relative
+					include ../components/nav
+				.col-lg-5.col-6.d-flex.justify-content-end
+					include ../components/signup
 //header end

@@ -23,35 +23,52 @@
   <body>
     <div class="wrapper">
       <!--header start-->
-      <header class="header" role="banner">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-lg-1 g-col-md-4"><a class="navbar-brand" href="#" title="Logo"><img src="images/logo.png" alt="alt"></a></div>
-            <div class="col-lg-6 g-col-md-4">
-              <ul class="navbar-nav d-flex flex-row">
-                <li class="navbar-item"><a class="navbar-link active" href="#">Product</a></li>
-                <li class="navbar-item"><a class="navbar-link active" href="#">Solutions</a></li>
-                <li class="navbar-item"><a class="navbar-link active" href="#">Resources</a></li>
-                <li class="navbar-item"><a class="navbar-link active" href="#">Enterprise</a></li>
-                <li class="navbar-item"><a class="navbar-link active" href="#">Enterprise</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-5 g-col-md-4 d-flex justify-content-end">
-              <ul class="signup-list d-flex flex-row align-items-center">
-                <li class="signup-item"> 
-                  <div class="dropdown lang-switcher">
-                    <button class="dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i><span class="current-lang">en</span></button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">English</a></li>
-                      <li><a class="dropdown-item" href="#">Español</a></li>
-                      <li><a class="dropdown-item" href="#">Français</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="signup-item"><a class="signup-link" href="#">Contact Sales</a></li>
-                <li class="signup-item"> <a class="signup-link" href="#">Login</a></li>
-                <li class="signup-item"><a class="btn d-flex flex-row align-items-center justify-content-center" href="#" title="title">Sign Up<i class="bi bi-arrow-right"></i></a></li>
-              </ul>
+      <header class="header border-bottom" role="banner">
+        <div class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="row align-items-end w-100">
+              <div class="col-lg-1 col-12 d-lg-block d-flex justify-content-center"><a class="navbar-brand d-block" href="#" title="Logo"><img class="height-md-auto" src="images/logo.png" alt="alt"></a></div>
+              <div class="col-lg-6 col-6 position-relative">
+                <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle d-flex flex-row align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources<i class="bi bi-chevron-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link">Enterprise</a></li>
+                    <li class="nav-item"><a class="nav-link">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-5 col-6 d-flex justify-content-end">
+                <ul class="signup-list d-flex flex-row align-items-center">
+                  <li class="signup-item"> 
+                    <div class="dropdown lang-switcher">
+                      <button class="dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i><span class="current-lang">en</span></button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="signup-item d-lg-block d-none"><a class="signup-link" href="#">Contact Sales</a></li>
+                  <li class="signup-item d-lg-block d-none"><a class="signup-link" href="#">Login</a></li>
+                  <li class="signup-item d-lg-block d-none"><a class="btn d-flex flex-row align-items-center justify-content-center" href="#" title="title">Sign up free<i class="bi bi-arrow-right"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -59,17 +76,17 @@
       <!--header end-->
       <section class="hero">
         <div class="container">
-          <div class="row d-flex align-items-center flex-row hero-holder">
-            <div class="col-lg-6 col-md-6 col-sm-12 hero-text">
+          <div class="row d-flex align-items-top flex-row hero-holder">
+            <div class="col-lg-6 col-md-12 col-sm-12 hero-text mb-md-3 mb-sm-3">
               <h1 class="hero-title">Take ideas from <br>better to best</h1>
               <p class="hero-desc">Miro is your team's visual platform to connect,<br>collaborate, and create — together.</p>
               <form class="d-flex flex-column form hero-form" action="#">
                 <div class="input-holder">
                   <input class="input" type="email" placeholder="Enter your work email" required>
-                </div><a class="btn d-flex flex-row align-items-center justify-content-center" href="#" title="title">Sign Up<i class="bi bi-arrow-right"></i></a><span class="helper-text">Collaborate with your team within minutes</span>
+                </div><a class="btn d-flex flex-row align-items-center justify-content-center" href="#" title="title">Sign up free<i class="bi bi-arrow-right"></i></a><span class="helper-text">Collaborate with your team within minutes</span>
               </form>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 hero-img"><img class="img hero-img" src="pic/hero__image.png" alt="Hero Image"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 hero-img"><img class="img-fluid img hero-img" src="pic/hero__image.png" alt="Hero Image"></div>
           </div>
         </div>
       </section>
@@ -82,20 +99,20 @@
           </div>
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="ideas-holder d-flex flex-row">
-                <div class="card ideas-item">
+              <div class="ideas-holder d-flex flex-lg-row flex-column">
+                <div class="card ideas-item col-lg-4 col-12">
                   <div class="card-body">
                     <h3 class="card-title ideas-title">Free forever</h3>
                     <p class="card-text ideas-desc">Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our <a href="#">pricing plans</a> for more features.</p>
                   </div>
                 </div>
-                <div class="card ideas-item">
+                <div class="card ideas-item col-lg-4 col-12">
                   <div class="card-body">
                     <h3 class="card-title ideas-title">Easy integrations</h3>
                     <p class="card-text ideas-desc">Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our <a href="">Marketplace</a>.</p>
                   </div>
                 </div>
-                <div class="card ideas-item">
+                <div class="card ideas-item col-lg-4 col-12">
                   <div class="card-body">
                     <h3 class="card-title ideas-title">Security first</h3>
                     <p class="card-text ideas-desc">We treat your data like you would — with the utmost care. We follow industry-leading security standards and give you tools to protect intellectual property. Learn more at our <a href="">Trust Center</a>.</p>
@@ -117,37 +134,45 @@
               <hr class="footer-separator">
             </div>
           </div>
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-2 col-md-12 col-sm-12 d-flex flex-row">
-              <ul class="socials-list d-flex flex-row align-items-center">
-                <li class="socials-item"><a class="socials-link" href="#" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                <li class="socials-item"><a class="socials-link" href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                <li class="socials-item"><a class="socials-link" href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
-                <li class="socials-item"><a class="socials-link" href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
-                <li class="socials-item"><a class="socials-link" href="#" title="Youtube"><i class="bi bi-youtube"></i></a></li>
-              </ul>
-              <div class="dropdown lang-switcher">
-                <button class="dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i><span class="current-lang">en</span></button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">English</a></li>
-                  <li><a class="dropdown-item" href="#">Español</a></li>
-                  <li><a class="dropdown-item" href="#">Français</a></li>
-                </ul>
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-8 col-md-12 col-12">
+              <div class="row d-flex flex-row">
+                <div class="col-lg-auto col-12 d-flex flex-row justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+                  <ul class="socials-list d-flex flex-row align-items-center">
+                    <li class="socials-item"><a class="socials-link" href="#" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+                    <li class="socials-item"><a class="socials-link" href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li class="socials-item"><a class="socials-link" href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="socials-item"><a class="socials-link" href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                    <li class="socials-item"><a class="socials-link" href="#" title="Youtube"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
+                  <div class="dropdown lang-switcher">
+                    <button class="dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i><span class="current-lang">en</span></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                      <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-12 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+                  <ul class="copyright-list d-flex flex-md-row justify-content-md-center flex-column">
+                    <li class="copyright-item"><a class="copyright-link" href="#" title="© &lt;span class=&quot;cur-year&quot;&gt;2022&lt;/span&gt; Miro">© <span class="cur-year">2022</span> Miro</a></li>
+                    <li class="copyright-item"><a class="copyright-link" href="#" title="Terms of Service">Terms of Service</a></li>
+                    <li class="copyright-item"><a class="copyright-link" href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li class="copyright-item"><a class="copyright-link" href="#" title="Manage Cookies">Manage Cookies</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12">
-              <ul class="copyright-list d-flex flex-row">
-                <li class="copyright-item"><a class="copyright-link" href="#" title="© &lt;span class=&quot;cur-year&quot;&gt;2022&lt;/span&gt; Miro">© <span class="cur-year">2022</span> Miro</a></li>
-                <li class="copyright-item"><a class="copyright-link" href="#" title="Terms of Service">Terms of Service</a></li>
-                <li class="copyright-item"><a class="copyright-link" href="#" title="Privacy Policy">Privacy Policy</a></li>
-                <li class="copyright-item"><a class="copyright-link" href="#" title="Manage Cookies">Manage Cookies</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-end">
-              <ul class="app-list d-flex flex-row align-items-center">
-                <li class="app-item"><a class="d-flex align-items-center flex-row app-link" href="#" title="App Store"><img class="app-img" src="images/app-store.png" alt=""></a></li>
-                <li class="app-item"><a class="d-flex align-items-center flex-row app-link" href="#" title="Google Play"><img class="app-img" src="images/google-play.png" alt=""></a></li>
-              </ul>
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="row d-flex justify-content-lg-end justify-content-center">
+                <div class="col-lg-3 col-12 w-auto">
+                  <ul class="app-list d-flex flex-row align-items-center">
+                    <li class="app-item"><a class="d-flex align-items-center flex-row app-link" href="#" title="App Store"><img class="app-img" src="images/app-store.png" alt=""></a></li>
+                    <li class="app-item"><a class="d-flex align-items-center flex-row app-link" href="#" title="Google Play"><img class="app-img" src="images/google-play.png" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
