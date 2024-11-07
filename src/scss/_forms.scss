@@ -1,13 +1,13 @@
 @import "./mixins";
 @import "./variables";
 .btn {
-	color: $btn-color;
 	background: $btn-bg;
 	border: 1px solid $btn-border;
 	padding: 12px 19px;
 	border-radius: 24px;
 	font-family: $secondary-font;
 	@include transition(opacity);
+	color: $btn-color;
 	column-gap: 7px;
 	&:hover {
 		opacity: 0.8;

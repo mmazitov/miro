@@ -28,8 +28,8 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-terser": "^2.1.0",
-		"sass": "^1.43.5",
 		"prettier": "^3.3.3",
+		"sass": "^1.43.5",
 		"stylelint": "^15.11.0",
 		"stylelint-config-standard": "^31.0.0"
 	},
@@ -40,6 +40,7 @@
 		"imagemin-mozjpeg": "^10.0.0",
 		"imagemin-optipng": "^8.0.0",
 		"imagemin-svgo": "^10",
+		"stylelint-order": "^6.0.4",
 		"stylelint-scss": "^5.3.2"
 	}
 }

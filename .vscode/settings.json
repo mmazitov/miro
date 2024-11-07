@@ -1,0 +1,38 @@
+{
+	"files.autoSave": "onFocusChange",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[pug]": {
+		"editor.defaultFormatter": "mrmlnc.vscode-pugbeautify"
+	},
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 2,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.requireConfig": true,
+	"scss.format.spaceAroundSelectorSeparator": true,
+	"scss.lint.duplicateProperties": "error",
+	"scss.lint.float": "error",
+	"scss.format.enable": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "always",
+		"source.organizeImports": "explicit"
+	}
+}
