@@ -65,7 +65,7 @@ function sassTask() {
 // Task to handle Bootstrap CSS separately
 function bootstrapCSS() {
 	return gulp
-		.src([paths.styles.bootstrap, paths.styles.bootstrapIcons]) // Include both Bootstrap SCSS and Icons
+		.src([paths.styles.bootstrap]) // Include both Bootstrap SCSS and Icons
 		.pipe(sourcemaps.init()) // Initialize sourcemaps for Bootstrap
 		.pipe(sass().on("error", sass.logError)) // Compile SCSS for Bootstrap
 		.pipe(cleanCSS()) // Minify CSS

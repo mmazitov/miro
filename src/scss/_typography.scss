@@ -1,9 +1,10 @@
 @import "./variables";
+
 body {
-	font: $weight-medium $fs-xmd/$lh-md $main-font;
-	color: $main-color;
-	background: $secondary-color;
-	-webkit-font-smoothing: antialiased;
+  background: $secondary-color;
+  color: $main-color;
+  font: $weight-medium $fs-xmd/$lh-md $main-font;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -12,83 +13,96 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 10px;
-	font-weight: $weight-medium;
+  font-weight: $weight-medium;
+  margin: 0 0 10px;
 }
+
 h1 {
-	font-size: $fs-lg;
-	line-height: $lh-lg;
-	font-weight: $weight-bold;
-	margin-bottom: 20px;
+  font-size: $fs-lg;
+  font-weight: $weight-bold;
+  line-height: $lh-lg;
+  margin-bottom: 20px;
 }
+
 h2 {
-	font-size: $fs-lg;
-	line-height: $lh-lg;
-	font-weight: $weight-bold;
-	margin-bottom: 2px;
+  font-size: $fs-lg;
+  font-weight: $weight-bold;
+  line-height: $lh-lg;
+  margin-bottom: 2px;
 }
+
 h3,
 .card-title {
-	font-size: $fs-md;
-	font-weight: $weight-bold;
-	margin-bottom: 29px;
+  font-size: $fs-md;
+  font-weight: $weight-bold;
+  margin-bottom: 29px;
 }
+
 h4 {
-	font-size: $fs-xmd;
+  font-size: $fs-xmd;
 }
+
 h5 {
-	font-size: $fs-sm;
+  font-size: $fs-sm;
 }
+
 h6 {
-	font-size: $fs-sm;
+  font-size: $fs-sm;
 }
+
 p {
-	font: $weight-medium $fs-xmd/$lh-md $secondary-font;
-	margin: 0 0 33px;
-	color: rgba($main-color, 0.6);
-	&:last-child {
-		margin-bottom: 0;
-	}
+  color: rgba($main-color, 0.6);
+  font: $weight-medium $fs-xmd/$lh-md $secondary-font;
+  margin: 0 0 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 strong,
 b {
-	font-weight: normal;
+  font-weight: normal;
 }
+
 a {
-	color: $links-color;
-	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
+  color: $links-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
 ul,
 ol {
-	margin: 0 0 rem(16) rem(32);
-	padding: 0;
-	list-style-position: outside;
-	li {
-		margin: 0 0 rem(8);
-	}
+  list-style-position: outside;
+  margin: 0 0 rem(16) rem(32);
+  padding: 0;
+
+  li {
+    margin: 0 0 rem(8);
+  }
 }
 
 blockquote {
-	font-style: italic;
-	color: lighten($main-color, 20);
-	padding-left: rem(16);
-	border-left: rem(4) solid $main-color;
-	margin: 0 0 rem(16);
+  border-left: rem(4) solid $main-color;
+  color: lighten($main-color, 20);
+  font-style: italic;
+  margin: 0 0 rem(16);
+  padding-left: rem(16);
 }
+
 code,
 pre {
-	font-family: "Courier New", Courier, monospace;
-	font-size: rem(14);
-	background-color: clighten($main-color, 40);
-	padding: rem(2) rem(4);
-	border-radius: rem(4);
+  background-color: clighten($main-color, 40);
+  border-radius: rem(4);
+  font-family: "Courier New", Courier, monospace;
+  font-size: rem(14);
+  padding: rem(2) rem(4);
 }
 
 img {
-	width: 100%;
-	height: auto;
+  height: auto;
+  width: 100%;
 }
