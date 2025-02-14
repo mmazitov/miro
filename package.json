@@ -5,12 +5,15 @@
 	"main": "gulpfile.js",
 	"author": "",
 	"license": "ISC",
+	"engines": {
+		"node": ">=14.21.3"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "gulp",
 		"lint": "stylelint '**/*.scss' --fix",
 		"format": "prettier --write '**/*.scss'",
-		"build": "gulp build"
+		"yarn": "gulp build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.25.8",
